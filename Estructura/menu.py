@@ -2,7 +2,7 @@ import helpers
 
 def iniciar():
     while True:
-        helpers.system('cls') # cls en Windows
+        helpers.limpiar_pantalla() # cls en Windows
 
         print("========================")
         print("  Ejercicios a resolver ")
@@ -17,7 +17,7 @@ def iniciar():
         print("========================")
 
         opcion = input("> ")
-        helpers.system('cls') # cls en Windows
+        helpers.limpiar_pantalla() # cls en Windows
 
         if opcion == '1':
             print("Ejercicio 1...\n")
@@ -33,8 +33,8 @@ def iniciar():
             print("Ejercicio 6...\n")
         if opcion == '7':
             print("Ejercicio 7...\n")
-            break
+        if opcion != '1' and opcion != '2' and opcion != '3' and opcion != '4' and opcion != '5' and opcion != '6' and opcion != '7':
+            print("Opción no válida...\n")
+        
 
         input("\nPresiona ENTER para continuar...")
-
-
