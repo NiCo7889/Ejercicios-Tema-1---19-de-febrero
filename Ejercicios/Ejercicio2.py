@@ -6,4 +6,4 @@
 # Finalmente muestra el valor final del numero_magico por pantalla
 
 def numero_magico():
-    
+    numero_magico = 12345679
