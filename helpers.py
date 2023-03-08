@@ -15,10 +15,8 @@ Primero deben importarse los módulos propios de Python. Luego, los módulos de 
 y finalmente, los módulos propios de la aplicación.
 Entre cada bloque de imports, debe dejarse una línea en blanco.
 """
-
 import os
 import platform
-
 
 def limpiar_pantalla():
     os.system('cls') if platform.system() == "Windows" else os.system('clear')

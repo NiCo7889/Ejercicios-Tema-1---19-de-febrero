@@ -38,7 +38,7 @@ class TestEjercicios(unittest.TestCase):
         self.assertEqual(ej4.crear_cola_tareas([("4", 'Realizar análisis de requisitos'), ("3", 'Diseñar la base de datos'), ("1", 'Desarrollar la funcionalidad principal'), ("2", 'Realizar pruebas unitarias')]), (['Desarrollar la funcionalidad principal', 'Realizar pruebas unitarias', 'Diseñar la base de datos', 'Realizar análisis de requisitos']))
 
     def test_(self):
-        self.assertEqual(ej5.Descomposicion("8975"),["0005", "0070", "0900", "8000", "8975"])
+        self.assertEqual(ej5.Descomposicion("8975"), ["0005", "0070", "0900", "8000", "8975"])
     
     def test_separar(self):
         self.assertEqual(ej6.separar([6,5,2,1,7,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]), ([2, 4, 6, 6, 8, 10, 12, 14, 16, 18, 20],[1, 3, 5, 5, 7, 7, 9, 11, 13, 15, 17, 19]))
