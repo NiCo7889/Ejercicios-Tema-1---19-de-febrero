@@ -14,3 +14,16 @@
 # Que el valor sea un número no significa necesariamente que deba serlo para formatearlo. 
 # Necesitarás jugar muy bien con los índices y realizar muchas conversiones entre tipos cadenas,
 # números y viceversa
+
+
+def Descomposicion(num):
+    numero = str(num)
+    numero = list(numero)
+    numero = numero[::-1]
+    n = len(numero) - 1
+    # Por ultimo recorremos esta lista para imprimir: tantos 0 a la izq como (n - i), letra, y tantos a la dcha como i
+    for i, letra in enumerate(numero):
+        print("{}{}{}".format((n - i)*"0", letra, i*"0")) 
+    return num
+
+print(Descomposicion(8975))
